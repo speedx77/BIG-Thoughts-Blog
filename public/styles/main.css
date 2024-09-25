@@ -1,0 +1,62 @@
+body {
+    background-color: #3B3030;
+    /*background-color: rgb(121, 94, 58); */
+    color: #FFF0D1;
+    font-family: "Lato";
+}
+
+
+header {
+    font-family: "Merriweather";
+}
+
+.text-color {
+    color: #FFF0D1;
+}
+
+input[type="radio"]:checked {
+    background-color: #795757;
+    /*border-color:#3B3030;*/
+}
+
+input[type=radio] {
+    border: 0px;
+    height: 1em;
+}
+
+button {
+    height: 5vh;
+    width: 10vh;
+}
+
+
+.secondary-color {
+    background-color: #664343;
+}
+
+.form-text {
+    font-size: 2rem;
+    color: #FFF0D1;
+}
+
+.recent-posts-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+}
+
+.recent-post-image {
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #664343;
+    border-radius: 10px;
+}
+
+a.recent-post-text:hover, a.recent-post-text:active {
+    color:#f5ddaf;
+}
+
+

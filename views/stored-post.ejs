@@ -1,0 +1,25 @@
+<%- include("partials/header.ejs") %>
+
+<main class="container">
+
+    <div class="row" style="margin-top: 20px; margin-bottom: 10px">
+
+        <div class=" col-12 p-5 mb-4 rounded secondary-color">
+            
+                <em><h2>Read All Our BIG Thoughts Here!</h2></em>
+    
+                <em><p class="lead">Choose from poetic to personal BIG Thoughts in one central location!</p>
+    
+                </em><p class="lead"><a href="/new-post" class="fw-bold" style="color: #FFF0D1">Write your own BIG Thoughts...</a></p>
+        </div>
+    </div>
+
+      <div class="p-4 mb-3 secondary-color rounded">
+        <h2 class="fst-italic"><u><%= title %></u></h2>
+        <h4><%= flexRadioDefault %></h4>
+        <p style="white-space: pre-wrap;"><%=submission%></p>
+      </div>
+      
+</main>
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,86 @@
+<%- include("partials/header.ejs") %>
+
+<% var entrySelected = 0; %>
+
+<script>
+
+
+
+
+
+</script>
+
+<main class="container">
+
+    <div class="row" style="margin-top: 20px; margin-bottom: 10px">
+
+        <div class=" col-12 p-5 mb-4 rounded secondary-color">
+            
+                <em><h2>Read All Our BIG Thoughts Here!</h2></em>
+    
+                <em><p class="lead">Choose from poetic to personal BIG Thoughts in one central location!</p>
+    
+                </em><p class="lead"><a href="/new-post" class="fw-bold" style="color: #FFF0D1">Write your own BIG Thoughts...</a></p>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <h2>BIG Thoughts</h2>
+
+        <div class=" col-12 p-5 mb-4 rounded secondary-color">
+
+          <% for (var i = 0; i < userData.length; i++) { %>
+            <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 text-decoration-none text-color recent-post-text" href="/view-post/<%=userData[i].slug%>">
+              <div class="recent-post-image" style="background-image: url('icons8-pencils-32.png')"></div>
+              <div class="col-lg-8">
+                <h4 class="mb-0"><%= userData[i].title %></h4>
+                <small><%= userData[i].firstSentence %>...</small>
+              </div>
+            </a>
+
+          <% } %>
+
+      
+            <a  class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 text-decoration-none text-color recent-post-text" id="sacrifice" href="/view-post/sacrifice" onclick="entrySelector()">
+                <div class="recent-post-image" style="background-image: url('icons8-pencils-32.png')"></div>
+                <div class="col-lg-8">
+                  <h4 class="mb-0"><%= data[0].storedTitle %></h4>
+                  <small><%= data[0].storedFirstSentence %>...</small>
+                  <% //console.log(entrySelected) %>
+                </div>
+              </a>
+
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 text-decoration-none text-color recent-post-text" href="/view-post/you-are-not-free">
+                <div class="recent-post-image" style="background-image: url('icons8-pencils-32.png')"></div>
+                <div class="col-lg-8">
+                  <h4 class="mb-0"><%= data[1].storedTitle %></h4>
+                  <small><%= data[1].storedFirstSentence %>...</small>
+                </div>
+              </a>
+  
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 text-decoration-none text-color recent-post-text" href="/view-post/r-depression">
+                <div class="recent-post-image" style="background-image: url('icons8-pencils-32.png')"></div>
+                <div class="col-lg-8">
+                  <h4 class="mb-0"><%= data[2].storedTitle %></h4>
+                  <small><%= data[2].storedFirstSentence %>...</small>
+                </div>
+              </a>
+  
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 text-decoration-none text-color recent-post-text" href="/view-post/mr-igl">
+                <div class="recent-post-image" style="background-image: url('icons8-pencils-32.png')"></div>
+                <div class="col-lg-8">
+                  <h4 class="mb-0"><%= data[3].storedTitle %></h4>
+                  <small><%= data[3].storedFirstSentence %>...</small>
+                </div>
+              </a>
+                
+        </div>
+    </div>
+
+</main>
+
+
+
+
+<%- include("partials/footer.ejs") %>

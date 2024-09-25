@@ -1,0 +1,378 @@
+<%- include("partials/header.ejs") %>
+
+<main class="container">
+
+    <div class="row" style="margin-top: 20px; margin-bottom: 20px">
+
+        <div class=" col-5 p-5 mb-4 rounded secondary-color">
+            
+                <em><h2>Featured Post: The Existential Question that is the Snickers Bar</h2></em>
+    
+                <em><p class="lead">July 20th, 2020. It’s 1 PM, that special time of day again. The moment where I’m freed
+                from the shackling chains of my minimum wage supermarket job. Even though I’ll be
+                here tomorrow and the next day, I’ve earned some temporary freedom...</p></em>
+    
+                </em><p class="lead"><a href="/all-posts" class="fw-bold" style="color: #FFF0D1">Keep Reading these BIG thoughts...</a></p>
+            
+            
+        </div>
+
+        <div class="col-2 d-flex justify-content-center"> 
+            THINK MORE.<br><br>
+            CREATE MORE.<br><br>
+            WRITE MORE.<br><br>
+            SING MORE.<br><br>
+            READ MORE.<br><br>
+            PRODUCE MORE.<br><br>
+            FIGHT MORE.<br><br>
+            BE MORE.<br><br>
+            MORE.<br><br>
+                                                        
+        </div>
+
+        <div class="col-5 p-5 mb-4 rounded secondary-color">
+            
+                <em><h2>#44</h2></em>
+    
+                <em><p class="lead">Five laps to go… #18, Bobby Labonte, is leading the pack at the Charlotte Motor Speedway to
+                    claim the NASCAR Coca-Cola 600 trophy. Inching close in second is #99, Carl Edwards, trying
+                    for his second win of the season and career...</p>
+    
+                </em><p class="lead"><a href="/all-posts" class="fw-bold" style="color: #FFF0D1">Keep Reading these BIG thoughts...</a></p>
+
+            
+        </div>
+
+    </div>
+            
+
+    <div class=" p-5 mb-4 rounded secondary-color" style="background-image: url('that which reflects banner.png'); height: 580px">
+        
+        <div class="col-5">
+            <em><h2>Featured Poem: That Which Reflects</h2></em>
+
+            <em><p class="lead">Regardless of who or what you claim to be, That Which Reflects reveals to us who we truly are…</p>
+
+            </em><p class="lead"><a href="/all-posts" class="fw-bold" style="color: #FFF0D1">Keep Reading these BIG poems...</a></p>
+        </div>
+            
+
+    </div>
+
+
+    <div class="row">
+
+      <div class="col-8">
+
+        <h2 class="border-bottom">
+          Create New Post
+        </h2>
+    
+        <form action="/create-post" method="POST">
+        <div class="form-group">
+          <label for="exampleFormControlInput1" class="form-text">BIG Thought Title</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="i can and i will" name="title" required>
+        </div>
+        <br>
+
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1" class="form-text">Write Your BIG Thoughts Here...</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="20" placeholder="as long as I try with my feet on the ground, I can and I will..." name="submission" required></textarea>
+        </div>
+
+        <br>
+
+        <h2>Select a BIG Thought Category</h2>
+        
+
+        <div>
+          <div class="form-check form-text">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" value="Personal" id="flexRadioDefault1" checked>
+            <label class="form-check-label" for="flexRadioDefault1">
+               Personal
+            </label>
+          </div>
+          <div class="form-check form-text">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" value="Poetry" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+               Poetry
+            </label>
+          </div>
+          <div class="form-check form-text">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" value="Political" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+               Political
+            </label>
+          </div>
+        </div>
+        <br>
+        <input class="mb-4"type="submit" value="Submit">
+      </form>
+
+      <!--- Area takeover
+      <div class="p-4 mb-3 secondary-color rounded">
+        <h3 class="fst-italic">BIG Thought Submitted!</h3>
+        <p class="mb-0">Thank you for your submission. Your BIG Thoughts will not fall upon deaf ears.</p>
+        <br>
+      </em><p class="lead"><a href="/all-posts" class="fw-bold" style="color: #FFF0D1">Read your BIG thought here!</a></p>
+      </div>
+       -->
+        
+        <h2 class="border-top" style="margin-top: 20px;">Full BIG Thought!</h2>
+        
+
+        <div class="p-4 mb-3 secondary-color rounded">
+          <h3 class="fst-italic"><u>Mr. IGL</u></h3>
+          <p> 
+            The sound of gunfire echoes and reverberates in the distance as our team approaches the outpost.
+            The jungles of Vietnam hold no sanctuary for the weak, no rest for the wicked. Entangled within
+            this heart of darkness is a war waged between superpowers over ideals on government. But what
+            wasn’t pictured were the pawns, the everyday people forced to fight along the battlefield for
+            ideals they had no stake in. 
+          <p>
+          <p>
+            We lost Private Jonathan earlier to a trap mine hidden by a tree. That was my fault. I should have
+            known; I should have called it out. The remainder of us, Sergeant Jean, Corporal Chris, First
+            Lieutenant Troy, and myself Captain Ryan must proceed despite the loss. There isn’t time to
+            mourn, time to stop and wonder how in a few moments that could be one of us with our limbs
+            detached from our bodies and the sky raining blood. We have to move on, I tell them.
+          </p>
+          <p>
+            We lost Private Jonathan earlier to a trap mine hidden by a tree. That was my fault. I should have
+            known; I should have called it out. The remainder of us, Sergeant Jean, Corporal Chris, First
+            Lieutenant Troy, and myself Captain Ryan must proceed despite the loss. There isn’t time to
+            mourn, time to stop and wonder how in a few moments that could be one of us with our limbs
+            detached from our bodies and the sky raining blood. We have to move on, I tell them.
+          </p>
+          <p>
+            The enemy base is only a few klicks ahead, I make the call for the remainder of the team to push
+            onwards while I flank from behind. In harmonious rhythm all of us clear the surrounding area,
+            taking out hostile after hostile. Killing has become second nature to us. There is no panic, no
+            terror in seeing the life seep out from another man’s eyes. It’s what we’ve been trained, drafted
+            to do. It’s just another step towards capturing the outpost.
+          </p>
+          <p>
+            I hear the familiar roar of an AK-47 ring around the corner and turn sharply to be greeted by the
+            torn-up bodies of Chris, Troy, and Jean. Valiantly they fought, but foolishly they died under my
+            command. I find myself in the situation that I have become too familiar with. Surrounded by
+            defiled and bloody corpses that use to resemble the people I laughed with.
+          </p>
+          <p>
+            By some stroke of luck, I notice an explosive barrel tucked in the corner of the room where the
+            remaining hostiles are. Quickly I dash to Jean’s body to take the grenade strapped to his chest. I
+            have a split second, a narrow window to throw the grenade and land it in the perfect spot.
+          </p>
+          <p>
+            There’s a very slim chance I can pull it off, but around me are the ghosts of my comrades who
+            sacrificed their lives. Watching, spectating, and criticizing my every move. With bullets flying in
+            my direction, I un-pin the grenade, turn the corner and with swiftness, lob the grenade as best as
+            I can. I dive to the floor feeling the blood drip from the gunshot wound in my thigh. Is this it? I
+            wonder. Years of school, of trials and tribulations boiled down to a singular moment, fighting for
+            a cause I have no stake in? Memories of friends, of family, and of good times flood in and take
+            over, but not before the thunderous crash of the grenade beckons the hallowing cries of my
+            enemies.
+          </p>
+          <p>
+            [ROUND 9 WON]
+            [ENEMIES ELIMINATED]
+            Another multiplayer game of Rainbow Six: Siege has been won by my friends and I. Over the
+            microphone I hear the usual post-game congratulations when someone secures the victory for the
+            team:
+            “LET’S FUCKING GOOOOO….”
+            “ICE IN HIS VEINS… CLUTCH GOD!”
+            “THESE KIDS ARE TRASH!!!”
+          </p>
+          <p>
+            This has been our nightly routine all summer long. Climbing the ranks in Rainbow, trying to win
+            as much as possible and saving the heroic moments to share and boast amongst friends. This
+            game has become our lifeblood, our means of staying connected after graduating high school.
+            Jean, Chris, Troy, Jonathan, and I makeup the core of the squad. Where other kids may be out
+            partying, we found joy in the virtual things like we always did growing up.
+          </p>
+          <p>
+            Parents and teachers could never teach me the most valuable lessons about life. I learned how to
+            live in 720p. A 24inch TV screen taught me more about life than the textbooks I was assigned to
+            read. Single player games taught me vocabulary and how to write a story better than any English
+            teacher has. Rhythm games like Guitar Hero became my preferred Saturday music lessons. At
+            the age of nine, Call of Duty lobbies with grown men and children calling each other n*ggers,
+            f*ggots, and declaring they fucked each other’s mothers taught me that words don’t matter. They
+            taught me those words in particular mean nothing. Shit talk meant nothing if you didn’t have the
+            skill to back it up. Your barrage of insults held no weight if you found yourself on the bottom of
+            the leaderboard.
+          </p>
+          <p>
+            I don’t have deep or extremely fond memories of my childhood. I don’t have interesting and
+            detailed stories to share, but get me started about which console, the PS3 or Xbox 360, was better
+            and we could debate for hours. I grew up not caring about saving the world from global warming
+            or preventing the pandas from going extinct. Instead I learned that good and evil are only matters
+            of perspective. Morality can be arbitrary. Just a matter of which character you spawn in as. And
+            yet ingrained within my digital schooling was a tender sympathy for those that did matter. For
+            the teammates who made up my team like Jean and Jonathan. For the Non-Player Characters, or
+            NPCs, who enumerated the fictional landscapes I explored. For the noobs and beginners who
+            needed a bit of guidance and direction.
+          </p>
+          <p>
+            But in all my adventures along these virtual horizons, in the thousands of hours of grinding there
+            has been one lesson that has never stuck. Something I always failed at and continually do. 
+          </p>
+          <p>
+            In multiplayer games where you work as a squad to accomplish some objective, I’ll often be
+            called “Mr. IGL.” It is short for “in-game leader”, the impromptu commander of the pack that’s
+            supposed to call out strategies and mid-round adaptations to guide the team towards victory. 
+          </p>
+          <p>
+            They’ll always ask me what we are doing next. Constantly demanding to know what “big brain
+            play” is going to win the us the game. Mr. IGL this, Mr. IGL that they’ll jokingly call me,
+            followed by an onslaught of comments how I’m supposed to be the “smart one” or how the
+            college I attend is an indicator of my intelligence. 
+          </p>
+          <p>
+            But more often than not, I don’t have the answers. I don’t have the game-winning strategy.
+            Frequently, I fail to coordinate the team. People will have their own ideals about how to proceed
+            and what results is an ugly, disgruntled mess of a team that barely manages to put together a
+            victory. If we do win it’s often by luck or because our opponents are more unorganized than us.
+            Triumph in our world is nothing more than a distortion of reality. Because within those Round 9
+            victories, within the screams and hollers declaring the other team as trash, is the sharp feeling in
+            my gut that we could have been better. I could have been better. I don’t have the game
+            knowledge to come up with the best round-to-round strategies. I don’t have the gun skill to
+            always get the opening kill of a round. I don’t have the confidence to make aggressive pushes
+            against the opposing team. My friends deserve someone better, and I’ll always live in the shadow
+            of this desired leader.
+          </p>
+          <p>
+            Our generation has never had to experience being drafted for a war they had no personal stake in.
+            We never had to experience the existential dread of opening the mailbox and being greeted by
+            draft papers welcoming and often guaranteeing us to an early death. We never had to experience
+            the PTSD and horror of seeing friends and comrades being blown to bits by meager land mines.
+            Instead we willingly drafted ourselves into those scenarios within digital landscapes. We jumped
+            headfirst into the jungles of Vietnam, along the bleak beaches of Normandy to fight a war
+            without any of the risk. To kill, die, and respawn. The men of those past days fought with their
+            lives on the line. Today, we fight with something else at stake. Pride, glory, and prestige have
+            become the claim to power in our modern era.
+          </p>
+          <p>
+            I and so many others battle for ranking points in these digital arenas. We wage war with the most
+            ruthless and cunning strategies that might impress famous war generals. Through weapon skins,
+            seasonal ranks, and montages we express our skill and dominance among our peers. For pride,
+            glory, and prestige we fight, we conquer. What many boys learn early in life is that their success
+            and social standing will be measured by their skill. If you were good at football or basketball
+            during recess you were automatically popular and loved. If you could knock people out in
+            dodgeball you were glorified and celebrated. This competitive spirit and the need for prestige
+            translates into the digital landscape. So, while these video games are supposed to be a fun and
+            entertaining escape, they serve a secondary purpose of granting boys and men the power and
+            attention they long for. I want to be respected, I want to be known for being the best at Call of
+            Duty or Rainbow Six Siege, but I don’t think I’ll ever get there.
+
+          </p>
+          <p>
+            Other kids learn teamwork through sports or school projects. They learn their position as the
+            shepherd or the sheep, as the leader or the follower. I’ve always been the latter. The one to take
+            the backseat and shift the responsibility, the weight of the world to someone else’s shoulders. I
+            wanted simplicity, but every trip along these virtual world’s demanded otherwise. I had to be
+            “the man.” I had to be “Mr. IGL” despite my wishes to be anything else but that. Others
+            demanded me to be that guy: their hero, their knight in shining armor. They think the great
+            college I attend is supposed to be an indicator of my skill; but it isn’t.
+          </p>
+          <p>
+            I’m not Moses who led his people out of slavery. I lead these teams to failure more than I lead
+            them towards salvation. I am just some guy. Solider 47, unit 18 of platoon 24. A kid who can
+            barely muster the confidence to raise his hand during class. A kid too shy to talk to girls. A kid
+            drafted and swept into the digital battlefield by the hype and craze my friends made of it. A fate
+            not too different than those in the 70s who found themselves worrying about who they would
+            take to prom to worrying if they would make it out of the jungle alive. Of course, my life isn’t on
+            the line, but pride, glory, triumph, leadership – the qualities that society demands and expects of
+            “strong, good” men are at stake on a virtual battlefield every day.
+          </p>
+          <p>
+            History hasn’t changed, human nature never does. Many other boys and I fight a war they passed
+            down unto us. A war for domination, for control, for power in a digital landscape so that we may
+            be recognized as heroes and legends.
+          </p>
+          <p>[GAME OVER]</p>
+          <p>-Ryan Burnett</p>
+     
+        </div>
+
+         
+
+
+
+
+      </div>
+
+      <div class="col-4">
+        <div class="position-sticky" style="top: 2rem;">
+          <div class="p-4 mb-3 secondary-color rounded">
+            <h3 class="fst-italic">About</h3>
+            <p class="mb-0">BIG Thoughts was created as a hub where people can come and share their personal, poetic, and political thoughts freely with no reprecussions. Users can annonymously and safely upload their thoughts and opinons to the web with no reprecussions. The art, magic of annonimty of the internet behind anime profile pictures has been lost to social media. BIG Thoughts aims to restore what we once had. Bringing an archaic way to the forefront to restore what made the world wide web special. </p>
+            <br>
+            <p> Create a new poem today!</p>
+          </div>
+
+            <div class="p-4 mb-3 secondary-color rounded">
+              <h3>Created by Ryan Burnett</h3>
+            </div>
+
+            <div class="p-4 mb-3 secondary-color rounded">
+              <h3>Writing Tips!</h3>
+              <P>Remember the words on the homepage of this website; <em>THINK MORE. CREATE MORE. WRITE MORE. SING MORE. READ MORE. PRODUCE MORE. FIGHT MORE. BE MORE. MORE.</em>
+              <br>
+              <p>In order to become MORE you have to sacrifice and work hard towards what you envision. "i can and i will"</p>
+            </div>
+
+            
+
+            <h2 class="border-bottom py-2">Recent BIG Thoughts</h2>
+
+            <% if (locals.title != "" && locals.firstSentence != "") { %>
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 text-decoration-none text-color recent-post-text" href="/view-post">
+              <div class="recent-post-image" style="background-image: url('icons8-pencils-32.png')"></div>
+              <div class="col-lg-8">
+                <h4 class="mb-0"><%= locals.title %></h4>
+                <small><%= locals.firstSentence %>...</small>
+              </div>
+            </a>
+            <%  } %>
+
+            <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 text-decoration-none text-color recent-post-text" href="/all-posts">
+              <div class="recent-post-image" style="background-image: url('icons8-pencils-32.png')"></div>
+              <div class="col-lg-8">
+                <h4 class="mb-0">Sacrifice ~ Golden Wave</h4>
+                <small>What we have done yesterday and what we do today and hereafter is not for waste...</small>
+              </div>
+            </a>
+
+            <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 text-decoration-none text-color recent-post-text" href="/all-posts">
+              <div class="recent-post-image" style="background-image: url('icons8-pencils-32.png')"></div>
+              <div class="col-lg-8">
+                <h4 class="mb-0">You Are (NOT) Free</h4>
+                <small>I’m sure many of you fondly remember your first moments on College Hill...</small>
+              </div>
+            </a>
+
+            <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 text-decoration-none text-color recent-post-text" href="/all-posts">
+              <div class="recent-post-image" style="background-image: url('icons8-pencils-32.png')"></div>
+              <div class="col-lg-8">
+                <h4 class="mb-0">r/depression</h4>
+                <small>As the clock strikes 3 AM, silence has eclipsed all of campus...</small>
+              </div>
+            </a>
+
+            <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 text-decoration-none text-color recent-post-text" href="/all-posts">
+              <div class="recent-post-image" style="background-image: url('icons8-pencils-32.png')"></div>
+              <div class="col-lg-8">
+                <h4 class="mb-0">Mr. IGL</h4>
+                <small>The sound of gunfire echoes and reverberates in the distance as our team approaches the outpost...</small>
+              </div>
+            </a>
+            
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </main>
+
+<%- include("partials/footer.ejs") %>

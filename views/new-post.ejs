@@ -1,0 +1,65 @@
+<%- include("partials/header.ejs") %>
+
+<main class="container">
+
+    <div class="row" style="margin-top: 20px; margin-bottom: 10px">
+
+        <div class=" col-12 p-5 mb-4 rounded secondary-color">
+            
+                <em><h2>Read All Our BIG Thoughts Here!</h2></em>
+    
+                <em><p class="lead">Choose from poetic to personal BIG Thoughts in one central location!</p>
+    
+                </em><p class="lead"><a href="/new-post" class="fw-bold" style="color: #FFF0D1">Read all the BIG Thoughts Here...</a></p>
+        </div>
+    </div>
+
+    <div class="col-12">
+
+      <h2 class="border-bottom">
+        Create New Post
+      </h2>
+  
+      <form action="/create-post" method="POST">
+      <div class="form-group">
+        <label for="exampleFormControlInput1" class="form-text">BIG Thought Title</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="i can and i will" name="title" required>
+      </div>
+      <br>
+
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1" class="form-text">Write Your BIG Thoughts Here...</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="20" placeholder="as long as I try with my feet on the ground, I can and I will..." name="submission" required></textarea>
+      </div>
+
+      <br>
+
+      <h2>Select a BIG Thought Category</h2>
+      
+
+      <div>
+        <div class="form-check form-text">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" value="Personal" id="flexRadioDefault1" checked>
+          <label class="form-check-label" for="flexRadioDefault1">
+             Personal
+          </label>
+        </div>
+        <div class="form-check form-text">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" value="Poetry" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+             Poetry
+          </label>
+        </div>
+        <div class="form-check form-text">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" value="Political" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+             Political
+          </label>
+        </div>
+      </div>
+      <br>
+      <input class="mb-4"type="submit" value="Submit">
+    </form>
+
+<%- include("partials/footer.ejs") %>
+
