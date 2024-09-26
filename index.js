@@ -21,8 +21,6 @@ function loadSubmissions( req, res, next) {
             storedSubmission: submissionsJSON.submission[i].storedSubmission,
             storedFirstSentence: submissionsJSON.submission[i].storedFirstSentence
         })
-
-
     }
     next();
 }
