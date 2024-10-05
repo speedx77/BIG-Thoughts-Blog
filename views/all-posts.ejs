@@ -32,7 +32,7 @@
 
           <% for (var i = 0; i < userData.length; i++) { %>
             <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 text-decoration-none text-color recent-post-text" href="/view-post/<%=userData[i].slug%>">
-              <div class="recent-post-image" style="background-image: url('icons8-pencils-32.png')"></div>
+              <div class="recent-post-image" style="background-image: url('http://localhost:3000/icons8-pencils-32.png')"></div>
               <div class="col-lg-8">
                 <h4 class="mb-0"><%= userData[i].title %></h4>
                 <small><%= userData[i].firstSentence %>...</small>
@@ -43,7 +43,7 @@
 
       
             <a  class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 text-decoration-none text-color recent-post-text" id="sacrifice" href="/view-post/sacrifice" onclick="entrySelector()">
-                <div class="recent-post-image" style="background-image: url('icons8-pencils-32.png')"></div>
+                <div class="recent-post-image" style="background-image: url('http://localhost:3000/icons8-pencils-32.png')"></div>
                 <div class="col-lg-8">
                   <h4 class="mb-0"><%= data[0].storedTitle %></h4>
                   <small><%= data[0].storedFirstSentence %>...</small>
@@ -52,7 +52,7 @@
               </a>
 
               <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 text-decoration-none text-color recent-post-text" href="/view-post/you-are-not-free">
-                <div class="recent-post-image" style="background-image: url('icons8-pencils-32.png')"></div>
+                <div class="recent-post-image" style="background-image: url('http://localhost:3000/icons8-pencils-32.png')"></div>
                 <div class="col-lg-8">
                   <h4 class="mb-0"><%= data[1].storedTitle %></h4>
                   <small><%= data[1].storedFirstSentence %>...</small>
@@ -60,7 +60,7 @@
               </a>
   
               <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 text-decoration-none text-color recent-post-text" href="/view-post/r-depression">
-                <div class="recent-post-image" style="background-image: url('icons8-pencils-32.png')"></div>
+                <div class="recent-post-image" style="background-image: url('http://localhost:3000/icons8-pencils-32.png')"></div>
                 <div class="col-lg-8">
                   <h4 class="mb-0"><%= data[2].storedTitle %></h4>
                   <small><%= data[2].storedFirstSentence %>...</small>
@@ -68,13 +68,12 @@
               </a>
   
               <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 text-decoration-none text-color recent-post-text" href="/view-post/mr-igl">
-                <div class="recent-post-image" style="background-image: url('icons8-pencils-32.png')"></div>
+                <div class="recent-post-image" style="background-image: url('http://localhost:3000/icons8-pencils-32.png')"></div>
                 <div class="col-lg-8">
                   <h4 class="mb-0"><%= data[3].storedTitle %></h4>
                   <small><%= data[3].storedFirstSentence %>...</small>
                 </div>
               </a>
-                
         </div>
     </div>
 

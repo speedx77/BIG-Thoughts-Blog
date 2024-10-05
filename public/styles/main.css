@@ -59,4 +59,7 @@ a.recent-post-text:hover, a.recent-post-text:active {
     color:#f5ddaf;
 }
 
+.submissionPicture {
+    border-radius: 10px;
+}
 

@@ -33,7 +33,7 @@ const port = 3000;
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static("public"));
+app.use(express.static("./public"));
 app.use(loadSubmissions)
 //app.use(createUserSlug)
 
@@ -56,6 +56,7 @@ app.get("/view-post/:submissionSlug",  (req, res) => {
 
     //console.log(createdSlug)
 
+
     if (req.params.submissionSlug == "sacrifice") {
         res.render("view-post.ejs", { data: data[0] });
     }
@@ -75,6 +76,32 @@ app.get("/view-post/:submissionSlug",  (req, res) => {
         }
     }
     
+})
+
+function userDataMatch(aray) {
+        array
+}
+
+
+app.get("/delete/:submissionSlug", (req, res) => {
+
+    for(var i = 0; i < userData.length; i++) {
+        if (req.params.submissionSlug == userData[i].slug){
+            delete userData[i] 
+        }
+    }
+
+    userData = userData.filter(item => item);
+
+    console.log(userData)
+
+    res.render("all-posts.ejs", {title: userTitle, firstSentence: userFirstSentence, slug: createdSlug, data, userData});
+
+    for(var i = 0; i < userData.length; i++){
+        console.log(userData.findIndex(element => element.slug === userData[i].slug))
+    }
+    
+
 })
 
 /*

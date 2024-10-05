@@ -198,6 +198,7 @@
             <h2 class="fst-italic"><u><%= data.storedTitle %></u></h2>
             <h4><%= data.storedFlexRadioDefault %></h4>
             <p style="white-space: pre-wrap;"><%=data.storedSubmission%></p>
+            <img src="http://localhost:3000/great_grandparents.png" class="submissionPicture">
           </div>
           <% break;
 
@@ -231,6 +232,9 @@
             <h2 class="fst-italic"><u><%= userData.title %></u></h2>
             <h4><%= userData.flexRadioDefault %></h4>
             <p style="white-space: pre-wrap;"><%=userData.submission%></p>
+            <div class="p-4 mb-3 secondary-color rounded">
+               <a href="/delete/<%=userData.slug%>">delete post</a>
+            </div>
           </div>
 
       <% } %>
