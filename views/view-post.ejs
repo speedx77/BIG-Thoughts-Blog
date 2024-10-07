@@ -232,9 +232,9 @@
             <h2 class="fst-italic"><u><%= userData.title %></u></h2>
             <h4><%= userData.flexRadioDefault %></h4>
             <p style="white-space: pre-wrap;"><%=userData.submission%></p>
-            <div class="p-4 mb-3 secondary-color rounded">
-               <a href="/delete/<%=userData.slug%>">delete post</a>
-            </div>
+          </div>
+          <div class="p-4 mb-3 col-2 link-button d-flex align-items-center">
+              <a href="/delete/<%=userData.slug%>" class="link-button-text" method="DELETE">delete post</a>
           </div>
 
       <% } %>

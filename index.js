@@ -93,12 +93,30 @@ app.get("/delete/:submissionSlug", (req, res) => {
 
     userData = userData.filter(item => item);
 
-    console.log(userData)
+    res.render("all-posts.ejs", {title: userTitle, firstSentence: userFirstSentence, slug: createdSlug, data, userData});
+
+    for(var i = 0; i < userData.length; i++){
+        userData.findIndex(element => element.slug === userData[i].slug)
+    }
+    
+
+})
+
+
+app.delete("/delete/:submissionSlug", (req, res) => {
+
+    for(var i = 0; i < userData.length; i++) {
+        if (req.params.submissionSlug == userData[i].slug){
+            delete userData[i] 
+        }
+    }
+
+    userData = userData.filter(item => item);
 
     res.render("all-posts.ejs", {title: userTitle, firstSentence: userFirstSentence, slug: createdSlug, data, userData});
 
     for(var i = 0; i < userData.length; i++){
-        console.log(userData.findIndex(element => element.slug === userData[i].slug))
+        userData.findIndex(element => element.slug === userData[i].slug)
     }
     
 
@@ -116,7 +134,7 @@ app.get("/all-posts", (req, res) => {
     res.render("all-posts.ejs", {title: userTitle, firstSentence: userFirstSentence, slug: createdSlug, data, userData});
 
     for(var i = 0; i < userData.length; i++){
-        console.log(userData.findIndex(element => element.slug === userData[i].slug))
+        userData.findIndex(element => element.slug === userData[i].slug)
     }
     // storedTitle: submissionsJSON.Sacrifice.storedTitle, storedFirstSentence: submissionsJSON.Sacrifice.storedFirstSentence
 }) 
@@ -156,7 +174,7 @@ app.get("/personal", (req, res) => {
     res.render("personal.ejs", {title: userTitle, firstSentence: userFirstSentence, slug: createdSlug, data, userData});
 
     for(var i = 0; i < userData.length; i++){
-        console.log(userData.findIndex(element => element.slug === userData[i].slug))
+        userData.findIndex(element => element.slug === userData[i].slug)
     }
 })
 
@@ -165,7 +183,7 @@ app.get("/poetry", (req, res) => {
     res.render("poetry.ejs", {title: userTitle, firstSentence: userFirstSentence, slug: createdSlug, data, userData});
 
     for(var i = 0; i < userData.length; i++){
-        console.log(userData.findIndex(element => element.slug === userData[i].slug))
+        userData.findIndex(element => element.slug === userData[i].slug)
     }
 })
 
@@ -174,7 +192,7 @@ app.get("/political", (req, res) => {
     res.render("political.ejs", {title: userTitle, firstSentence: userFirstSentence, slug: createdSlug, data, userData});
 
     for(var i = 0; i < userData.length; i++){
-        console.log(userData.findIndex(element => element.slug === userData[i].slug))
+        userData.findIndex(element => element.slug === userData[i].slug)
     }
 })
 

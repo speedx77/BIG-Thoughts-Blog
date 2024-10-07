@@ -10,3 +10,5 @@ Insert rest of stored BIG Thoughts
 Picture upload?
 icon
 tags on stored entrees 
+
+add get for delete and add actual delete call? - done, but test this

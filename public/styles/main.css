@@ -63,3 +63,20 @@ a.recent-post-text:hover, a.recent-post-text:active {
     border-radius: 10px;
 }
 
+.link-button {
+    padding: 1px 6px;
+    border-radius: 3px;
+    color: buttontext;
+    background-color: #FFF0D1;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    height: 25px
+
+}
+
+.link-button-text {
+    text-decoration: none;
+    color:#664343;
+}
+
